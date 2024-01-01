@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erik Developer</title>
+
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+    <nav id="top" class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Erik Developer</a>
+            <button id="menu-mobile" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex w-100 align-items-center">
+
+                    <li class="nav-item flex-fill d-flex justify-content-center">
+                        <button id="home-nav" class="nav-link active" aria-current="page" onclick="handlePage(this)">
+                            <img src="icons/menu/home.png" style="width: 25px;">
+                        </button>
+                    </li>
+
+                    <li class="nav-item flex-fill d-flex justify-content-center">
+                      <button id="about-nav" class="nav-link" onclick="handlePage(this)">
+                          <img src="icons/menu/about-me.png" style="width: 25px;">
+                      </button>
+                    </li>
+
+                    <li class="nav-item flex-fill d-flex justify-content-center">
+                        <button id="services-nav" class="nav-link" onclick="handlePage(this)">
+                            <img src="icons/menu/services.png" style="width: 25px;">
+                        </button>
+                    </li>
+
+                    <li class="nav-item flex-fill d-flex justify-content-center">
+                        <button id="projects-nav" class="nav-link" onclick="handlePage(this)">
+                            <img src="icons/menu/projects.png" style="width: 25px;">
+                        </button>
+                    </li>
+
+                    <li class="nav-item flex-fill  d-flex justify-content-center">
+                        <button id="contact-nav" class="nav-link" onclick="handlePage(this)">
+                            <img src="icons/menu/contacto.png" style="width: 25px;">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="home" class="container row m-auto" style="width: 100%; max-width: 850px; height: 91vh;">
+
+            <div class="container row m-auto shadow-text-animation">
+                <!-- Title Left-->
+                <div id="title-home" class="col container m-auto w-100 d-flex justify-content-center align-items-center" style="height: 91vh;">
+                    <div>
+                        <h1 class="text-center title-size m-auto" style="color: white; max-width: 250px;">
+                            Hi, I'm <span style="color: #e71567;"><strong>Erik</strong></span><br>
+                            <strong>Web App Developer</strong>
+                        </h1>  
+                        <div class="row my-5 m-auto purple-icons" style="max-width: 300px;">
+                            <!--GitHub-->
+                            <a href="https://www.github.com/ErikWebDeveloper" target="_blank" class="col d-flex align-items-center justify-content-center" style="color: var(--pink);">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                </svg>
+                            </a>
+                            <!--Instagram-->
+                            <a href="https://www.instagram.com/e.webcodedeveloper" target="_blank" class="col d-flex align-items-center justify-content-center" style="color: var(--pink);">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                </svg>
+                            </a>
+                            <!--Mail-->
+                            <a href="mailto:erikcodedeveloper@gmail.com" class="col d-flex align-items-center justify-content-center" style="color: var(--pink);"">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Right-->
+                <div id="card-home" class="col container m-auto w-100  d-flex justify-content-center align-items-center" style="height: 92vh;">
+                    <div class="card m-auto text-light p-0 rounded-1 border-dark w-100 glass-box box-shadow" style="min-width: 300px; max-width: 350px;">
+                        <!--Imagen-->
+                        <div class="container d-flex p-0">
+                            <div class="container d-flex w-100 pink-gradient" style="border-radius: 4px 4px 0 0 ;">
+                                <img src="img/profile.jpg" class="card-img-top img-fluid m-auto p-2" alt="Avatar" style="width: 120px; border-radius: 100%;">
+                            </div>
+                        </div>
+                        <!--Primera fila-->
+                        <div class="container d-flex">
+                            <div class="card-body">
+                              <h5 class="card-title grey fs-6">Nombre</h5>
+                              <p class="card-text fs-6">Erik</p>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6 grey">Pais</h5>
+                                <p class="card-text fs-6">🇦🇩 Andorra</p>
+                            </div>
+                        </div>
+                        <!--Segunda fila-->
+                        <div class="container d-flex">
+                            <div class="card-body">
+                              <h5 class="card-title fs-6 grey">Edad</h5>
+                              <p class="card-text fs-6">31 años</p>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-6 grey">Experiencia</h5>
+                                <p class="card-text fs-6">4 años</p>
+                            </div>
+                        </div>
+                        <!--Skills-->
+                        <div class="container d-flex">
+                            <div class="card-body">
+                                <h5 class="card-title fs-6 grey">Habilidades</h5>
+                                <div class="container d-flex flex-column gap-3 icons-container">
+                                    <div class="row">
+                                        <img style="width: 40px;" class="col"  src="icons/tech/html.png" alt="" srcset="" >
+                                        <img style="width: 40px;" class="col" src="icons/tech/css.png" alt="" srcset="">
+                                        <img style="width: 40px;" class="col" src="icons/tech/js.png" alt="" srcset="">
+                                        <img style="width: 40px;" class="col" src="icons/tech/php.png" alt="" srcset="">
+                                    </div>
+                                    <div class="row">
+                                        <img style="width: 40px;" class="col" src="icons/tech/python.png" alt="" srcset="">
+                                        <img style="width: 40px;" class="col" src="icons/tech/node.png" alt="" srcset="">
+                                        <img style="width: 40px;" class="col" src="icons/tech/apache.png" alt="" srcset="">
+                                        <img style="width: 40px;" class="col" src="icons/tech/linux.png" alt="" srcset="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <!--Arrow Down-->
+            <a href="#card-home" class="arrows down-arrow"></a>
+            <a href="#top" class="arrows up-arrow"></a>
+
+    </section>
+
+    <section id="about" class="container row m-auto" style="min-height: 90vh; max-width: 600px;">
+
+        <article class="p-0 m-auto box-shadow rounded rounded-2" style="overflow: hidden;">
+            <!--Header-->
+            <div class="d-flex flex-row px-4 w-100 dark-box">
+                <h1 class="flex-fill p-4" style="color: rgb(203, 203, 203);">Acerca de mi</h1>
+                <div class="flex-fill d-flex flex-row gap-3 align-items-center justify-content-end">
+                    <div style="border-radius: 100%; background-color: yellow; width: 15px; height: 15px;"></div>
+                    <div style="border-radius: 100%; background-color: red; width: 15px; height: 15px;"></div>
+                </div>
+            </div>
+            <!--Body-->
+            <div class="row container m m-auto p-0">
+                <!--Text-->
+                <article class="w-50 col p-3 text-size purple-box" style="font-family: monospace; min-width: 350px; color: rgb(232, 184, 221);">
+                <!--
+                    <div id="text-console" class="position-absolute">
+                        <span><span id="console-text"></span><span id="cursor">L</span></span>
+                        
+                    </div>
+                -->
+                    <div id="text-reference-hidden">
+                        <p>Saludos!,</p>
+                        <p>Mi nombre es Erik, soy un desarrollador dedicado en la creación y mantenimiento de servidores web, así como en el diseño y desarrollo de páginas web, eCommerces y aplicaciones web.</p>
+                        <p>En este espacio quiero compartir algunos proyectos modestos que he tenido el placer de desarrollar o están en proceso de desarrollo.</p>
+                        <p>Mi enfoque abarca desde la implementación de soluciones backend hasta la creación de experiencias interactivas y atractivas en el frontend.</p>
+                        <p>Estaría encantado de ser parte de tu proyecto y contribuir con mi pasión por el desarrollo. </p>
+                        <p>¡Gracias por tu visita! <span id="cursor">L</span></p>
+                        
+                    </div>
+                </article>
+                <!--Logo-->
+                <article class="text-light w-50 col d-flex justify-content-center align-items-center" style="background-color: rgba(255, 255, 255, 0.1); min-width: 350px;">
+                    <p class="text-center title-size m-auto py-2" style="color: rgb(203, 203, 203); text-shadow: 0px 0px 50px white;">
+                        <span style="color: #e71567;">&lt;</span>
+                        /
+                        <span style="color: #e71567;">&gt;</span>
+                    </p>
+                </article>
+            </div>
+        </article>
+
+    </section>
+
+    <section id="services" class="container row m-auto" style="min-height: 90vh;">
+
+        <article class="row p-0 m-auto box-shadow rounded rounded-2" style="overflow: hidden; max-width: 600px;">
+            <!--Left Side-->
+            <div class="col d-flex justify-content-center align-items-center py-5 dark-box">
+                <h1 class="title-size" style="color: rgb(215, 208, 208);">Servicios</h1>
+            </div>
+            <!-- Rigth Side-->
+            <div class="col w-50 d-flex align-items-center justify-content-center py-3 purple-box" style="min-width: 350px;">
+                <ul class="list-group d-flex flex-column gap-3 list-animation">
+                    <li class="list-group-item glass-box box-shadow text-center" style="color: white;">Creación, implementación y mantenimiento de servidores web</li>
+                    <li class="list-group-item glass-box box-shadow text-center" style="color: white;">Diseño y desarrollo de páginas y aplicaciones web</li>
+                    <li class="list-group-item glass-box box-shadow text-center" style="color: white;">Creacion de eCommerce o tiendas online</li>
+                    <li class="list-group-item glass-box box-shadow text-center" style="color: white;">Renovación de páginas webs</li>
+                    <li class="list-group-item glass-box box-shadow text-center" style="color: white;">Colaborador en proyectos como freelance</li>                
+                </ul>
+            </div>
+        </article>
+
+    </section>
+
+    <section id="projects" class="container row m-auto" style="min-height: 90vh; max-width: 800px;">
+
+        <article id="projects-card" class="p-0 m-auto rounded rounded-3 row">
+            <!-- Title Left-->
+            <div class="container col w-50 m-auto d-flex justify-content-center align-items-center" style="min-width: 300px;">
+                <h1 class="title-size text-light m-auto py-2 shadow-text-animation">
+                    <strong>Proyectos</strong>
+                </h1>
+            </div>
+            <!--Card Right-->
+            <div class="col w-50">
+               <!--Card-->
+               <div id="carouselExampleIndicators" class="carousel slide">
+                    <!--Indicators-->
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <!--Cards-->
+                    <div class="carousel-inner pb-5 pt-3">
+                        <!--Card-->
+                        <div class="carousel-item active">
+                            <div class="card m-auto border-0 box-shadow rounded rounded-2" style="width: 22rem; background-color: rgba(255, 255, 255, 0); overflow: hidden;">
+                                <!--Card Image-->
+                                <div class="card-body w-100 glass-box rounded-0 border border-0" style="background-color: rgba(80, 75, 75, 0.5);">
+                                    <img src="https://elxiulet.com/assets/page-images/xiulet-min.png" class="card-img-top border border-1 rounded-circle m-auto row" alt="" style="max-width: 100px; background-color: white;">
+                                </div>
+                                <!--Card 1-->
+                                <div class="card-body dark-box">
+                                    <h5 class="card-title grey">Tipo</h5>
+                                    <p class="card-text text-light">Página Web</p>  
+                                    <h5 class="card-title grey">Descripción</h5>
+                                    <p class="card-text text-light">Página web para una ludoteca, donde se muestra la información sobre el negocio y permite hacer la matrícula de forma online. </p>
+                                    <h5 class="card-title grey">Estado</h5>
+                                    <p class="card-text text-light">En producción</p>                                  
+                                </div>
+                                <!--Card Link-->   
+                                <div class="card-body dark-box">
+                                    <a href="https://www.elxiulet.com" target="_blank" class="card-link">Visitar web</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="card m-auto border-0 box-shadow rounded rounded-2" style="width: 22rem; background-color: rgba(255, 255, 255, 0); overflow: hidden;">
+                                <!--Card Image-->
+                                <div class="card-body w-100 glass-box rounded-0 border border-0" style="background-color: rgba(80, 75, 75, 0.5);">
+                                    <img src="img/logo.png" class="card-img-top border border-1 rounded-circle m-auto row" alt="" style="max-width: 100px; background-color: white;aspect-ratio: 1/1;">
+                                </div>
+                                <!--Card 1-->
+                                <div class="card-body dark-box">
+                                    <h5 class="card-title grey">Tipo</h5>
+                                    <p class="card-text text-light">Aplicación Web</p>  
+                                    <h5 class="card-title grey">Descripción</h5>
+                                    <p class="card-text text-light">App web, portal de mercado trabajo 100% gratuito para promover y facilitar la búsqueda de trabajo en Andorra. </p>
+                                    <h5 class="card-title grey">Estado</h5>
+                                    <p class="card-text text-light">En desarollo</p>                                  
+                                </div>
+                                <!--Card Link-->   
+                                <div class="card-body dark-box">
+                                    <a href="https://www.treballandorra.org" target="_blank" class="card-link">Visitar web</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    
+    <section id="contact" class="container row m-auto" style="min-height: 90vh;">
+        <article class="container m-auto row box-shadow p-0 rounded rounded-3" style="overflow: hidden; max-width: 600px;">
+                <div class="col card text-center text-light p-3 w-50 rounded-0 purple-box" style=" min-width: 320px;">
+                    <div class="card-body items-animation">
+                        <h5 class="card-title border border-1 p-2 py-3 rounded rounded-0 box-shadow mb-4 m-auto title-size box-shadow" style="max-width: 350px; background-color: rgba(255, 255, 255, 0.2);">Contactame</h5>
+                        <p class="card-text">
+                            ¿Listo para tener tu propia página web?
+                        </p>
+                        <p class="card-text">¿Quieres empezar ya con tu tienda online?</p>
+                        <p class="card-text">
+                            Hazlo realidad con facilidad. Contáctame para empezar tu proyecto. Desarrollo web accesible y amigable.
+                        </p>
+                        <p class="card-text mb-4">¡Hablemos!</p>
+                        <div class="container d-flex flex-column gap-3 align-items-center justify-content-center">
+                            <a href="mailto:erikcodedeveloper@gmail.com" type="button" class="btn custom-btn rounded-pill py-2 px-5 border-0 box-shadow d-flex justify-content-center align-items-center gap-3 border-dark border-1" style="min-width: 230px;">
+                                <img class="img-fluid" src="icons/gmail.png" alt="" style="max-width: 40px;">
+                                <h5 class="m-auto fs-6 grey"> Gmail</h5>
+                            </a>
+                            <a href="https://www.instagram.com/e.webcodedeveloper" target="_blink" type="button" class="btn custom-btn rounded-pill py-2 px-5 border-0 box-shadow d-flex justify-content-center align-items-center gap-3 border-dark border-1"  style="min-width: 230px;">
+                                <img class="img-fluid" src="icons/instagram.png" alt="" style="max-width: 40px;">
+                                <h5 class="m-auto fs-6 grey"> Instagram</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </article>
+    </section>
+
+    <div id="fader" style="width: 100%; height: 100%; display: none;"></div>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/spa.js"></script>
+    <!--position-absolute top-50 start-50 translate-middle-->
+</body>
+</html>
